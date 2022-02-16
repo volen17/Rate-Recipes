@@ -306,6 +306,6 @@ fetch('https://api.npoint.io/51ed846bdd74ff693d7e')
         search.addEventListener('change', (e) => {
             const name = search.value;
             let filteredMeals = filterByName(data.meals, name);
-            addMealsList(filteredMeals.slice(0, 10));
+            addMealsList(filteredMeals.slice(0, 10), data.meals);
         })
     });
